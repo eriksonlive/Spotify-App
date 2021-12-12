@@ -1,0 +1,12 @@
+<app-loading *ngIf="loading"></app-loading>
+<div class="container">
+    <div class="mb-5 mt-5" *ngIf="mensajeError">
+        <app-error [contenidoError]="mensajeError"></app-error>
+    </div>
+    <div class=" mt-5">
+        <h2 class="titulo">Mis Albunes</h2>
+    </div>
+    <div class="card-columns mb-5 mt-5" *ngIf="music">
+        <app-tarjetas [myMusic]="music"></app-tarjetas>
+    </div>
+</div>

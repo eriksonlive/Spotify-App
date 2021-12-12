@@ -1,0 +1,9 @@
+<div class="form-outline">
+    <input type="search" #termino (keyup)="buscar(termino.value)" id="form1" class="form-control" placeholder="Buscar" aria-label="Search" />
+</div>
+
+<app-loading *ngIf="loading"></app-loading>
+
+<div class="card-columns mb-5 mt-5" *ngIf="termino">
+    <app-tarjetas *ngIf="!loading" [myMusic]="artista"></app-tarjetas>
+</div>

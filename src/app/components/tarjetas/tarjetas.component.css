@@ -1,0 +1,8 @@
+.space{
+display: flex;
+margin-bottom: 5px;
+}
+
+.space span{
+    margin-right:2px;
+}
